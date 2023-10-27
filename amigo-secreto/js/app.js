@@ -3,8 +3,13 @@ let amigos = [];
 
 function adicionar() {
     let amigo = document.getElementById('nome-amigo').value;
+
+    if (amigo == '') {
+        alert('O nome do amigo deve ser inserido');
+        return;
+    }
+
     let listaAmigos = document.getElementById('lista-amigos');
-    
     amigos.push(amigo);
 
     if (listaAmigos.textContent == ''){
