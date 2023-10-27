@@ -40,9 +40,10 @@ function sortear() {
 
         if (index == amigos.length -1) {
             sorteio.innerHTML = sorteio.innerHTML + amigos[index] + '--> ' + amigos[0] + '<br>';
+        } else {
+            sorteio.innerHTML = sorteio.innerHTML + amigos[index] + '--> ' + amigos[index + 1] + '<br>';
         }
 
-        sorteio.innerHTML = sorteio.innerHTML + amigos[index] + '--> ' + amigos[index + 1] + '<br>';
     }
 
 }
