@@ -62,7 +62,7 @@ function embaralha(lista) {
 function reiniciar() {
     amigos = [];
     document.getElementById('lista-amigos').textContent = '';
-    document.getElementById('lista-sorteio') = ''
+    document.getElementById('lista-sorteio').innerHTML = ''
 }
 
 
